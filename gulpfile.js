@@ -13,7 +13,7 @@ gulp.task('connect', function() {
 });
 
 gulp.task('img', function() {
-	gulp.src('./src/img/*.jpg')
+	gulp.src('./src/img/**')
 		.pipe(gulp.dest('./dest/img'))
 });
 
