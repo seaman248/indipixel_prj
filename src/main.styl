@@ -1,0 +1,63 @@
+@import 'kouto-swiss'
+
+meyer-reset()
+
+DESCTOP_SCREEN = only screen, min-device-width 980px, min-width 980px
+
+.head-line
+	position relative
+	width 100%
+	height 21px
+	background-color #04e4a2
+	
+body
+	font-family: 'Montserrat', sans-serif;
+	
+header
+	background-color #e94643
+	height 80px
+	width 100%
+	clearfix()
+
+.header-wraper
+	gs('fluid')
+	max-width 1250px
+	clearfix()
+	
+
+.logo
+	col(4)
+	display inline-block
+	line-height 80px
+	color #FFFFFF
+	font-weight bold
+	font-size em(35)
+	text-align center
+	+media-query(DESCTOP_SCREEN)
+		text-align left
+		span
+			padding-left 165px
+		
+nav
+	display inline-block
+	text-align right
+	line-height 80px
+	col(8)
+
+.nav-wraper
+	padding-right 20px
+	text-align right
+.nav-item
+	display inline-block
+	font-size em(16)
+	margin 0 10px
+	font-weight 100
+	a
+		text-transform uppercase
+		border-bottom 3px solid #fdd835
+		text-decoration none
+		color #FFFFFF
+		
+	
+	
+	

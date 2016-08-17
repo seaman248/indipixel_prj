@@ -2,8 +2,7 @@ var gulp = require('gulp'),
 	connect = require('gulp-connect'),
 	jade = require('gulp-jade'),
 	stylus = require('gulp-stylus'),
-	kouto = require('kouto-swiss'),
-	source = require('vinyl-source-stream');
+	kouto = require('kouto-swiss');
 
 gulp.task('connect', function() {
 	connect.server({
