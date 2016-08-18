@@ -2,7 +2,7 @@
 
 meyer-reset()
 
-DESCTOP_SCREEN = only screen, min-device-width 980px, min-width 980px
+DESCTOP_SCREEN = only screen, min-device-width 1280px, min-width 1280px
 
 LIGHT-GREEN = #04e4a2
 
@@ -18,7 +18,6 @@ body
 // Header style
 header
 	background-color #e94643
-	height 80px
 	width 100%
 	clearfix()
 
@@ -29,7 +28,7 @@ header
 		
 
 	.logo
-		col(4)
+		col(6)
 		display inline-block
 		line-height 80px
 		color #FFFFFF
@@ -45,7 +44,7 @@ header
 		display inline-block
 		text-align right
 		line-height 80px
-		col(8)
+		col(6)
 
 	.nav-wraper
 		padding-right 20px
@@ -89,24 +88,30 @@ button
 
 .green-elements
 	position absolute
-	padding-top 75px
+	+media-query(DESCTOP_SCREEN)
+		padding-top 75px
 	left 0
-
 .phone
+	visibility hidden
 	position absolute
-	display inline-block
-	left 14%
-	margin-top 65px
+	+media-query(DESCTOP_SCREEN)
+		visibility visible
+		display inline-block
+		left 14%
+		margin-top 65px
 
 .phone_screen
 	position absolute
 	margin-top -700px
 	margin-left 30px
 	
-.promo_left-side
-	col(5.4)
-	offset(6)
+.promo_right-side
+	col(12)
 	color #FFFFFF
+	position relative
+	+media-query(DESCTOP_SCREEN)
+		col(5.4)
+		offset(6)
 	.content
 		display inline-block
 		padding-left 20px

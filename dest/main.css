@@ -132,7 +132,6 @@ body {
 }
 header {
   background-color: #e94643;
-  height: 80px;
   width: 100%;
 }
 header:before,
@@ -161,7 +160,7 @@ header .logo {
   display: inline-block;
   float: left;
   overflow: hidden;
-  width: 32.5%;
+  width: 49.16666666666666%;
   margin: 0 0.416666666666666%;
   display: inline-block;
   line-height: 80px;
@@ -170,7 +169,7 @@ header .logo {
   font-size: 2.1875em;
   text-align: center;
 }
-@media only screen and (min-device-width: 980px) and (min-width: 980px) {
+@media only screen and (min-device-width: 1280px) and (min-width: 1280px) {
   header .logo {
     text-align: left;
   }
@@ -185,7 +184,7 @@ header nav {
   display: inline-block;
   float: left;
   overflow: hidden;
-  width: 65.83333333333333%;
+  width: 49.16666666666666%;
   margin: 0 0.416666666666666%;
 }
 header .nav-wraper {
@@ -231,41 +230,61 @@ button {
 }
 .green-elements {
   position: absolute;
-  padding-top: 75px;
   left: 0;
 }
+@media only screen and (min-device-width: 1280px) and (min-width: 1280px) {
+  .green-elements {
+    padding-top: 75px;
+  }
+}
 .phone {
+  visibility: hidden;
   position: absolute;
-  display: inline-block;
-  left: 14%;
-  margin-top: 65px;
+}
+@media only screen and (min-device-width: 1280px) and (min-width: 1280px) {
+  .phone {
+    visibility: visible;
+    display: inline-block;
+    left: 14%;
+    margin-top: 65px;
+  }
 }
 .phone_screen {
   position: absolute;
   margin-top: -700px;
   margin-left: 30px;
 }
-.promo_left-side {
+.promo_right-side {
   display: inline-block;
   float: left;
   overflow: hidden;
-  width: 44.16666666666667%;
+  width: 99.16666666666666%;
   margin: 0 0.416666666666666%;
-  margin-left: 50.41666666666666%;
   color: #fff;
+  position: relative;
 }
-.promo_left-side .content {
+@media only screen and (min-device-width: 1280px) and (min-width: 1280px) {
+  .promo_right-side {
+    display: inline-block;
+    float: left;
+    overflow: hidden;
+    width: 44.16666666666667%;
+    margin: 0 0.416666666666666%;
+    margin-left: 50.41666666666666%;
+  }
+}
+.promo_right-side .content {
   display: inline-block;
   padding-left: 20px;
   margin-top: 180px;
 }
-.promo_left-side h1 {
+.promo_right-side h1 {
   text-transform: uppercase;
   font-size: 1.875em;
   line-height: 38px;
   margin-bottom: 25px;
 }
-.promo_left-side p {
+.promo_right-side p {
   font-size: 1.0625em;
   line-height: 20px;
 }
