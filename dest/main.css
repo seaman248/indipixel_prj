@@ -129,6 +129,12 @@ table {
 }
 body {
   font-family: 'Montserrat', sans-serif;
+  font-size: 200%;
+}
+@media only screen and (min-device-width: 1280px) and (min-width: 1280px) {
+  body {
+    font-size: 100%;
+  }
 }
 header {
   background-color: #e94643;
@@ -169,7 +175,8 @@ header .logo {
   line-height: 80px;
   color: #fff;
   font-weight: bold;
-  font-size: 2.1875em;
+  font-size: 2em;
+  letter-spacing: 2px;
   text-align: center;
 }
 @media only screen and (min-device-width: 1280px) and (min-width: 1280px) {
@@ -196,7 +203,7 @@ header .nav-wraper {
 }
 header .nav-item {
   display: inline-block;
-  font-size: 1em;
+  font-size: 1rem;
   margin: 0 10px;
   font-weight: 100;
 }
@@ -209,13 +216,13 @@ header .nav-item a {
 button,
 .buttonInput {
   text-transform: uppercase;
-  line-height: 50px;
+  line-height: 3;
   border: none;
-  border-radius: 5px;
+  border-radius: 10px;
   color: #fff;
-  font-size: 1.125em;
+  font-size: 1.2rem;
   font-weight: bold;
-  padding: 0 24px;
+  padding: 0 20px;
   outline: none;
   cursor: pointer;
 }
@@ -227,7 +234,7 @@ button,
 }
 .promo {
   background-color: #ef5350;
-  height: 580px;
+  padding-bottom: 123px;
 }
 .promo-wraper {
   width: 100%;
@@ -288,20 +295,26 @@ button,
 .promo_right-side .content {
   display: inline-block;
   padding-left: 20px;
-  margin-top: 180px;
+  margin-top: 50px;
+}
+@media only screen and (min-device-width: 1280px) and (min-width: 1280px) {
+  .promo_right-side .content {
+    margin-top: 180px;
+  }
 }
 .promo_right-side h1 {
   text-transform: uppercase;
-  font-size: 1.875em;
-  line-height: 38px;
-  margin-bottom: 25px;
+  font-size: 1.8rem;
+  line-height: 1.35;
+  margin-bottom: 23px;
+  letter-spacing: 0.8px;
 }
 .promo_right-side p {
-  font-size: 1.0625em;
-  line-height: 22px;
+  font-size: 1.2rem;
+  line-height: 1.1;
 }
 .button-container {
-  margin-top: 55px;
+  margin-top: 59px;
   text-align: right;
   padding-right: 32px;
 }
@@ -397,4 +410,49 @@ button,
     width: auto;
     float: right;
   }
+}
+footer {
+  background-color: #fefcf2;
+  margin-top: 32px;
+  width: 100%;
+}
+footer .container {
+  width: 100%;
+  margin: 0 auto;
+  overflow: hidden;
+  max-width: 1250px;
+  line-height: 67px;
+  color: #636363;
+}
+.copyrighte {
+  display: inline-block;
+  float: left;
+  overflow: hidden;
+  width: 49.16666666666666%;
+  margin: 0 0.416666666666666%;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  padding-left: 127px;
+}
+.contact-mail-box {
+  display: inline-block;
+  float: left;
+  overflow: hidden;
+  width: 49.16666666666666%;
+  margin: 0 0.416666666666666%;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  padding-left: 22px;
+}
+.contact-mail-box .icon i {
+  color: #04e4a2;
+  float: left;
+  line-height: 67px;
+  font-size: 1.77rem;
+}
+.contact-mail-box .email {
+  float: left;
+  padding-left: 13px;
 }

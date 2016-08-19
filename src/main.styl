@@ -14,7 +14,9 @@ LIGHT-GREEN = #04e4a2
 	
 body
 	font-family: 'Montserrat', sans-serif;
-
+	font-size 200%
+	+media-query(DESCTOP_SCREEN)
+		font-size 100%
 // Header style
 header
 	background-color #e94643
@@ -36,7 +38,8 @@ header
 		line-height 80px
 		color #FFFFFF
 		font-weight bold
-		font-size em(35)
+		font-size 2em
+		letter-spacing 2px
 		text-align center
 		+media-query(DESCTOP_SCREEN)
 			text-align left
@@ -54,7 +57,7 @@ header
 		text-align right
 	.nav-item
 		display inline-block
-		font-size em(16)
+		font-size 1rem
 		margin 0 10px
 		font-weight 100
 		a
@@ -67,13 +70,13 @@ header
 // Button style
 button, .buttonInput
 	text-transform uppercase
-	line-height 50px
+	line-height 3
 	border none
-	border-radius 5px
+	border-radius 10px
 	color #FFFFFF
-	font-size em(18)
+	font-size 1.2rem
 	font-weight bold
-	padding 0 24px
+	padding 0 20px
 	outline none
 	cursor pointer
 .green-button
@@ -85,7 +88,7 @@ button, .buttonInput
 // Promo style
 .promo
 	background-color #ef5350
-	height 580px
+	padding-bottom 123px
 
 .promo-wraper
 	gs('fluid')
@@ -125,18 +128,21 @@ button, .buttonInput
 	.content
 		display inline-block
 		padding-left 20px
-		margin-top 180px
+		margin-top 50px
+		+media-query(DESCTOP_SCREEN)
+			margin-top 180px
 	h1
 		text-transform: uppercase
-		font-size em(30)
-		line-height 38px
-		margin-bottom 25px
+		font-size 1.8rem
+		line-height 1.35
+		margin-bottom 23px
+		letter-spacing 0.8px
 	p
-		font-size em(17)
-		line-height 22px
+		font-size 1.2rem
+		line-height 1.1
 	
 .button-container
-	margin-top 55px
+	margin-top 59px
 	text-align right
 	padding-right 32px
 	
@@ -200,5 +206,32 @@ button, .buttonInput
 		+media-query(DESCTOP_SCREEN)
 			width auto
 			float right
+
+
+footer
+	background-color #fefcf2
+	margin-top 32px
+	width 100%
+	.container
+		gs('fluid')
+		max-width 1250px
+		line-height 67px
+		color #636363
+.copyrighte 
+	col(6)
+	box-sizing border-box
+	padding-left 127px
+.contact-mail-box
+	col(6)
+	box-sizing border-box
+	padding-left 22px
+	.icon i
+		color #04e4a2
+		float left
+		line-height 67px
+		font-size 1.77rem
+	.email
+		float left
+		padding-left 13px
 		
 	
