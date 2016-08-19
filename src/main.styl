@@ -19,6 +19,9 @@ body
 header
 	background-color #e94643
 	width 100%
+	z-index 100
+	position relative
+	display block
 	clearfix()
 
 	.header-wraper
@@ -91,18 +94,21 @@ button, .buttonInput
 .green-elements
 	position absolute
 	visibility hidden
+	margin-top -75px
+	margin-left -350px
+	z-index 1
 	+media-query(DESCTOP_SCREEN)
 		visibility visible
-		padding-top 75px
-	left 0
 .phone
 	visibility hidden
 	position absolute
+	display block
+	z-index 2
 	+media-query(DESCTOP_SCREEN)
 		visibility visible
 		display inline-block
-		left 190px
 		margin-top 65px
+		margin-left 135px
 
 .phone_screen
 	position absolute
@@ -168,10 +174,16 @@ button, .buttonInput
 		+media-query(DESCTOP_SCREEN)
 			input:nth-child(even)
 				margin-left 20px
-	.inputList:before
+	.inputList
+		display inline-block
+		position relative
+	.inputList::after
+		display inline-block
 		position absolute
-		content '>'
-		font-size 30px
+		content ''
+		background-color grey
+		height 400px
+		width 400px
 	textarea
 		width 100%
 		font-size 1em
