@@ -353,9 +353,24 @@ button,
 .form form {
   margin-top: 18px;
 }
-.form .two-column-block input {
+.form .two-column-block .input-container {
   width: 100%;
   margin: 0 0 20px 0;
+  display: inline-block;
+  min-width: 250px;
+}
+@media only screen and (min-device-width: 1280px) and (min-width: 1280px) {
+  .form .two-column-block .input-container {
+    width: 250px;
+  }
+}
+@media only screen and (min-device-width: 1280px) and (min-width: 1280px) {
+  .form .two-column-block .input-container:nth-child(even) {
+    margin-left: 20px;
+  }
+}
+.form .two-column-block input {
+  width: 100%;
   line-height: 44px;
   font-size: 1em;
   padding: 0 20px;
@@ -363,33 +378,12 @@ button,
   border: 2px solid #e3f2fd;
   outline: none;
 }
-@media only screen and (min-device-width: 1280px) and (min-width: 1280px) {
-  .form .two-column-block input {
-    display: inline-block;
-    float: left;
-    overflow: hidden;
-    width: 49.16666666666666%;
-    margin: 0 0.416666666666666%;
-    max-width: 250px;
-    margin: 0 0 20px 0;
-  }
-}
-@media only screen and (min-device-width: 1280px) and (min-width: 1280px) {
-  .form .two-column-block input:nth-child(even) {
-    margin-left: 20px;
-  }
-}
-.form .inputList {
-  display: inline-block;
-  position: relative;
-}
-.form .inputList::after {
-  display: inline-block;
+.form .two-column-block .inputList i {
   position: absolute;
-  content: '';
-  background-color: #808080;
-  height: 400px;
-  width: 400px;
+  margin-left: -35px;
+  line-height: 44px;
+  font-size: 30px;
+  color: #04e4a2;
 }
 .form textarea {
   width: 100%;

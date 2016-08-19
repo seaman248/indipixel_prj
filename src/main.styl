@@ -165,32 +165,30 @@ button, .buttonInput
 	form
 		margin-top 18px
 	.two-column-block
-		input
+		.input-container
 			width 100%
 			margin 0 0 20px 0
+			display inline-block
+			min-width 250px
 			+media-query(DESCTOP_SCREEN)
-				col(6)
-				max-width 250px
-				margin 0 0 20px 0
+				width 250px
+		+media-query(DESCTOP_SCREEN)		
+			.input-container:nth-child(even)
+				margin-left 20px
+		input
+			width 100%
 			line-height 44px
 			font-size 1em
 			padding 0 20px
 			border-radius 5px
 			border 2px solid #e3f2fd
 			outline none
-		+media-query(DESCTOP_SCREEN)
-			input:nth-child(even)
-				margin-left 20px
-	.inputList
-		display inline-block
-		position relative
-	.inputList::after
-		display inline-block
-		position absolute
-		content ''
-		background-color grey
-		height 400px
-		width 400px
+		.inputList i
+			position absolute
+			margin-left -35px
+			line-height 44px
+			font-size 30px
+			color LIGHT-GREEN
 	textarea
 		width 100%
 		font-size 1em

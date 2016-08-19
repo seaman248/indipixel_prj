@@ -37,10 +37,15 @@ html
 				h3 Lets Talk
 				form
 					.two-column-block
-						input(type="text" placeholder='First Name')
-						input(type="text" placeholder='Last Name')
-						input(type="email" placeholder='Email Address')
-						input.inputList(type="text" placeholder='App Design')
+						.input-container
+							input(type="text" placeholder='First Name')
+						.input-container
+							input(type="text" placeholder='Last Name')
+						.input-container
+							input(type="email" placeholder='Email Address')
+						.input-container.inputList
+							input(type="text" placeholder='App Design')
+							i.fa.fa-angle-down
 					textarea(placeholder='Type your query here' rows=4)
 					input.buttonInput.red-button(type="submit", value="send")
 
