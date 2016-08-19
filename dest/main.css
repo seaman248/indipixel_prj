@@ -203,7 +203,8 @@ header .nav-item a {
   text-decoration: none;
   color: #fff;
 }
-button {
+button,
+.buttonInput {
   text-transform: uppercase;
   line-height: 50px;
   border: none;
@@ -218,6 +219,9 @@ button {
 .green-button {
   background-color: #04e4a2;
 }
+.red-button {
+  background-color: #e94643;
+}
 .promo {
   background-color: #ef5350;
   height: 580px;
@@ -230,10 +234,12 @@ button {
 }
 .green-elements {
   position: absolute;
+  visibility: hidden;
   left: 0;
 }
 @media only screen and (min-device-width: 1280px) and (min-width: 1280px) {
   .green-elements {
+    visibility: visible;
     padding-top: 75px;
   }
 }
@@ -245,7 +251,7 @@ button {
   .phone {
     visibility: visible;
     display: inline-block;
-    left: 14%;
+    left: 190px;
     margin-top: 65px;
   }
 }
@@ -286,10 +292,96 @@ button {
 }
 .promo_right-side p {
   font-size: 1.0625em;
-  line-height: 20px;
+  line-height: 22px;
 }
 .button-container {
-  margin-top: 60px;
+  margin-top: 55px;
   text-align: right;
-  padding-right: 30px;
+  padding-right: 32px;
+}
+.form {
+  width: 100%;
+  margin: 0 auto;
+  overflow: hidden;
+  padding-top: 35px;
+  max-width: 1250px;
+}
+.form .container {
+  display: inline-block;
+  float: left;
+  overflow: hidden;
+  width: 99.16666666666666%;
+  margin: 0 0.416666666666666%;
+}
+@media only screen and (min-device-width: 1280px) and (min-width: 1280px) {
+  .form .container {
+    display: inline-block;
+    float: left;
+    overflow: hidden;
+    width: 49.16666666666666%;
+    margin: 0 0.416666666666666%;
+    margin-left: 50.41666666666666%;
+    max-width: 520px;
+    padding-left: 20px;
+  }
+}
+.form h3 {
+  padding-left: 22px;
+  font-size: 1.2em;
+  color: #ef5350;
+}
+.form form {
+  margin-top: 18px;
+}
+.form .two-column-block input {
+  width: 100%;
+  margin: 0 0 20px 0;
+  line-height: 44px;
+  font-size: 1em;
+  padding: 0 20px;
+  border-radius: 5px;
+  border: 2px solid #e3f2fd;
+  outline: none;
+}
+@media only screen and (min-device-width: 1280px) and (min-width: 1280px) {
+  .form .two-column-block input {
+    display: inline-block;
+    float: left;
+    overflow: hidden;
+    width: 49.16666666666666%;
+    margin: 0 0.416666666666666%;
+    max-width: 250px;
+    margin: 0 0 20px 0;
+  }
+}
+@media only screen and (min-device-width: 1280px) and (min-width: 1280px) {
+  .form .two-column-block input:nth-child(even) {
+    margin-left: 20px;
+  }
+}
+.form .inputList:before {
+  position: absolute;
+  content: '>';
+  font-size: 30px;
+}
+.form textarea {
+  width: 100%;
+  font-size: 1em;
+  padding: 10px 20px;
+  border-radius: 5px;
+  border: 2px solid #e3f2fd;
+  outline: none;
+  resize: none;
+}
+.form .buttonInput {
+  width: 100%;
+  margin-top: 17px;
+  line-height: 44px;
+  padding: 0 34px;
+}
+@media only screen and (min-device-width: 1280px) and (min-width: 1280px) {
+  .form .buttonInput {
+    width: auto;
+    float: right;
+  }
 }

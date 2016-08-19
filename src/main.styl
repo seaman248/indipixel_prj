@@ -62,7 +62,7 @@ header
 		
 	
 // Button style
-button
+button, .buttonInput
 	text-transform uppercase
 	line-height 50px
 	border none
@@ -75,6 +75,8 @@ button
 	cursor pointer
 .green-button
 	background-color LIGHT-GREEN
+.red-button
+	background-color #e94643
 
 
 // Promo style
@@ -88,7 +90,9 @@ button
 
 .green-elements
 	position absolute
+	visibility hidden
 	+media-query(DESCTOP_SCREEN)
+		visibility visible
 		padding-top 75px
 	left 0
 .phone
@@ -97,7 +101,7 @@ button
 	+media-query(DESCTOP_SCREEN)
 		visibility visible
 		display inline-block
-		left 14%
+		left 190px
 		margin-top 65px
 
 .phone_screen
@@ -123,11 +127,66 @@ button
 		margin-bottom 25px
 	p
 		font-size em(17)
-		line-height 20px
+		line-height 22px
 	
 .button-container
-	margin-top 60px
+	margin-top 55px
 	text-align right
-	padding-right 30px
-
+	padding-right 32px
+	
+.form
+	gs('fluid')
+	padding-top 35px
+	max-width 1250px
+	.container
+		col(12)
+		+media-query(DESCTOP_SCREEN)
+			col(6)
+			offset(6)
+			max-width 250px*2+20px
+			padding-left 20px
+	h3
+		padding-left 22px
+		font-size 1.2em
+		color #ef5350
+	form
+		margin-top 18px
+	.two-column-block
+		input
+			width 100%
+			margin 0 0 20px 0
+			+media-query(DESCTOP_SCREEN)
+				col(6)
+				max-width 250px
+				margin 0 0 20px 0
+			line-height 44px
+			font-size 1em
+			padding 0 20px
+			border-radius 5px
+			border 2px solid #e3f2fd
+			outline none
+		+media-query(DESCTOP_SCREEN)
+			input:nth-child(even)
+				margin-left 20px
+	.inputList:before
+		position absolute
+		content '>'
+		font-size 30px
+	textarea
+		width 100%
+		font-size 1em
+		padding 10px 20px
+		border-radius 5px
+		border 2px solid #e3f2fd
+		outline none
+		resize none
+	.buttonInput
+		width 100%
+		margin-top 17px
+		line-height 44px
+		padding 0 34px
+		+media-query(DESCTOP_SCREEN)
+			width auto
+			float right
+		
 	

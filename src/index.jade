@@ -15,7 +15,7 @@ html
 						li.nav-item
 							a(href="#") Contact Us
 
-		.promo
+		section.promo
 			.promo-wraper
 				.green-elements
 					img.green-element(src="./img/green-element.png", alt="")
@@ -33,12 +33,13 @@ html
 
 		section.form
 			.container
+				h3 Lets Talk
 				form
-					h3 Lets talk
-					input(type="text" placeholder='First Name')
-					input(type="text" placeholder='Last Name')
-					input(type="email" placeholder='Email Address')
-					input(type="text" placeholder='App Design')
-					textarea(placeholder='Type your query here')
-					input(type="submit", value="send")
+					.two-column-block
+						input(type="text" placeholder='First Name')
+						input(type="text" placeholder='Last Name')
+						input(type="email" placeholder='Email Address')
+						input.inputList(type="text" placeholder='App Design')
+					textarea(placeholder='Type your query here' rows=4)
+					input.buttonInput.red-button(type="submit", value="send")
 
