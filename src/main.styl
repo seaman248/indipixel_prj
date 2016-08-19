@@ -14,7 +14,7 @@ LIGHT-GREEN = #04e4a2
 	
 body
 	font-family: 'Montserrat', sans-serif;
-	font-size 200%
+	font-size 3.5vw
 	+media-query(DESCTOP_SCREEN)
 		font-size 100%
 // Header style
@@ -57,7 +57,7 @@ header
 		text-align right
 	.nav-item
 		display inline-block
-		font-size 1rem
+		font-size 1em
 		margin 0 10px
 		font-weight 100
 		a
@@ -74,7 +74,7 @@ button, .buttonInput
 	border none
 	border-radius 10px
 	color #FFFFFF
-	font-size 1.2rem
+	font-size 1.2em
 	font-weight bold
 	padding 0 20px
 	outline none
@@ -137,6 +137,7 @@ button, .buttonInput
 		line-height 1.35
 		margin-bottom 23px
 		letter-spacing 0.8px
+		font-weight bold
 	p
 		font-size 1.2rem
 		line-height 1.1
@@ -217,10 +218,14 @@ footer
 		max-width 1250px
 		line-height 67px
 		color #636363
+		font-size 0.6em
+		+media-query(DESCTOP_SCREEN)
+			font-size 1em
 .copyrighte 
 	col(6)
 	box-sizing border-box
 	padding-left 127px
+	font-size 1em
 .contact-mail-box
 	col(6)
 	box-sizing border-box
@@ -229,7 +234,7 @@ footer
 		color #04e4a2
 		float left
 		line-height 67px
-		font-size 1.77rem
+		font-size 1.77em
 	.email
 		float left
 		padding-left 13px

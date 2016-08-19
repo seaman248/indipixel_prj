@@ -129,7 +129,7 @@ table {
 }
 body {
   font-family: 'Montserrat', sans-serif;
-  font-size: 200%;
+  font-size: 3.5vw;
 }
 @media only screen and (min-device-width: 1280px) and (min-width: 1280px) {
   body {
@@ -203,7 +203,7 @@ header .nav-wraper {
 }
 header .nav-item {
   display: inline-block;
-  font-size: 1rem;
+  font-size: 1em;
   margin: 0 10px;
   font-weight: 100;
 }
@@ -220,7 +220,7 @@ button,
   border: none;
   border-radius: 10px;
   color: #fff;
-  font-size: 1.2rem;
+  font-size: 1.2em;
   font-weight: bold;
   padding: 0 20px;
   outline: none;
@@ -308,6 +308,7 @@ button,
   line-height: 1.35;
   margin-bottom: 23px;
   letter-spacing: 0.8px;
+  font-weight: bold;
 }
 .promo_right-side p {
   font-size: 1.2rem;
@@ -423,6 +424,12 @@ footer .container {
   max-width: 1250px;
   line-height: 67px;
   color: #636363;
+  font-size: 0.6em;
+}
+@media only screen and (min-device-width: 1280px) and (min-width: 1280px) {
+  footer .container {
+    font-size: 1em;
+  }
 }
 .copyrighte {
   display: inline-block;
@@ -434,6 +441,7 @@ footer .container {
   -moz-box-sizing: border-box;
   box-sizing: border-box;
   padding-left: 127px;
+  font-size: 1em;
 }
 .contact-mail-box {
   display: inline-block;
@@ -450,7 +458,7 @@ footer .container {
   color: #04e4a2;
   float: left;
   line-height: 67px;
-  font-size: 1.77rem;
+  font-size: 1.77em;
 }
 .contact-mail-box .email {
   float: left;
